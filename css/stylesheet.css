@@ -1,0 +1,50 @@
+body {
+    font-weight: 200;
+    font-size: 14px;
+    letter-spacing: .9px;
+    background-color: #FFF;
+    color: #0a0a0a;
+}
+#headbar{
+	align: center;
+	position: relative;
+	width: 90%;
+	padding: 10px;
+	border-bottom: 1px solid rgba(0,0,0,.3);
+}
+#logo{
+	width:20%;
+	display: inline-block;
+	/*width:40px;*/
+	align-content: left;
+}
+#logo img{
+	width:35px;
+}
+#extra{
+	display: inline-block;
+	width: 35%;
+}
+.h-butt{
+	padding: inherit;
+	display: inline-block;
+	width:10%;
+	float: right;
+}
+#body-container{
+	height:60vh;
+}
+#main-button{
+	width:20%;
+	top:50%;
+	left:40%;
+	padding: 10px;
+	/*align:center ;*/
+	font-size: 25px;
+	position: absolute;
+	/*height:10%;*/
+	border:1px solid black;
+}
+#vido, #type-container{
+	display: none;
+}
