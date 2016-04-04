@@ -1,0 +1,53 @@
+body {
+	/*overflow: hidden;*/
+    font-weight: 200;
+    font-size: 14px;
+    letter-spacing: .9px;
+    background-color: #FFF;
+    color: #0a0a0a;
+}
+pre{
+	font-size: 13px;
+}
+#headbar{
+	align: center;
+	position: fixed;
+	width: 90%;
+	padding: 10px;
+	border-bottom: 1px solid rgba(0,0,0,.3);
+}
+#logo{
+	width:20%;
+	display: inline-block;
+	/*width:40px;*/
+	align-content: left;
+}
+#logo img{
+	width:35px;
+}
+#extra{
+	display: inline-block;
+	width: 35%;
+}
+
+
+
+
+#foot{
+	position: fixed;
+	width: 90%;
+	bottom: 1%;
+
+	left:5%;
+	border-top: 1px solid rgba(0,0,0,.3);
+}
+.foot-e{
+	padding: 5px;
+	display: inline-block;
+}
+#l-foot{
+	float:left;
+}
+#r-foot{
+	float:right;
+}
