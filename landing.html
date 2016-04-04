@@ -34,24 +34,32 @@
 		</div>
 
 		<div id = "vido">
-		<video id="video" controls="" autoplay="asdkasd" name="media" style="width: 100%;"><source src="http://www.patek.com/movies/home/2016/5930_5230.mp4" type="video/mp4"></video>
-		
+		<video id="video" loop="" controls="" autoplay="" name="media" style="width: 100%;"><source src="http://www.patek.com/movies/home/2016/5930_5230.mp4" type="video/mp4"></video>
+		</div>
 		<div id = "type-container">
-			<div class="type">
-				shit lorem ipsum bla bla
+			<a href="#">
+			<div class="type" id="t1">
+				<p>shit lorem ipsum bla bla</p>
 			</div>
+			</a>
 
-			<div class="type">
-				shit lorem ipsum bla bla
+			<a href="#" >
+			<div class="type" id="t2">
+				<p>shit lorem ipsum bla bla</p>
 			</div>
+			</a>
+			
+			<a href="#">
+			<div class="type" id="t3">
+				<p>shit lorem ipsum bla bla</p>
+			</div>
+			</a>
 
-			<div class="type">
-				shit lorem ipsum bla bla
+			<a href="#">
+			<div class="type" id="t4">
+				<p>shit lorem ipsum bla bla</p>
 			</div>
-
-			<div class="type">
-				shit lorem ipsum bla bla
-			</div>
+			</a>
 		</div>
 		</center>
 		<div id = "foot">
@@ -94,6 +102,15 @@ chaujasd 22
 		}, 100);
 	}, 100);
 }
+
+	function show_dis(){
+		this.getElementsByTagName('p')[0].opacity = 1;
+	}
+
+
+
+
+
 
 </script>
 
