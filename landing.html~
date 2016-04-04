@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Bucky</title>
+	<meta name="author" content="Aditya Dewan" />
+	<meta name="description" content="Bucky Watches" />
+	<meta name="keywords"  content="IIIT-Allahabad" />
+	<meta name="Resource-type" content="Document" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+
+</head>
+
+<body>
+	<center>
+	<div id = "headbar">
+		<div id = "logo">
+			<img src="images.png">
+		</div>
+		<div class = "h-buttbig">company ka logo bc</div>
+		<div class = "h-butt">shiss1</div>
+		<div class = "h-butt">shiss2</div>
+		<div class = "h-butt">shiss2</div>
+
+		
+	</div>
+	
+	<div id = "body-container">
+		<p id= "butt-note1" ><i>The <b>BEST</b> tha you can get</i></p>
+		<p id= "butt-note"><i>discover us</i></p>
+		<div id = "main-button">
+		lorem shipsum
+		</div>
+
+		<div id = "vido">
+		<video id="video" loop="" controls="" autoplay="" name="media" style="width: 100%;"><source src="http://www.patek.com/movies/home/2016/5930_5230.mp4" type="video/mp4"></video>
+		</div>
+		<div id = "type-container">
+			<a href="#">
+			<div class="type" id="t1">
+				<p>shit lorem ipsum bla bla <b>category 1</b></p>
+			</div>
+			</a>
+
+			<a href="#" >
+			<div class="type" id="t2">
+				<p>shit lorem ipsum bla bla  <b>category 2</b></p>
+			</div>
+			</a>
+			
+			<a href="#">
+			<div class="type" id="t3">
+				<p>shit lorem ipsum bla bla <b>category 3</b></p>
+			</div>
+			</a>
+
+			<a href="#">
+			<div class="type" id="t4">
+				<p>shit lorem ipsum bla bla <b>category 4</b></p>
+			</div>
+			</a>
+		</div>
+		</center>
+		<div id = "foot">
+		<div id = "l-foot" class="foot-e" >
+<pre>
+chausdfg 11
+asdf
+</pre>
+		</div>
+		<div id = "r-foot" class="foot-e" >
+<pre>
+chaujasd 22
+</pre>
+		</div>
+		</div>
+
+</body>
+
+<script>
+	vid = document.getElementById("video");
+	vid.pause();
+	document.getElementById('main-button').addEventListener('click', show_vid, false);
+	function show_vid(){
+		//vid.play();
+		document.getElementById('butt-note').style.left = '0px';
+		document.getElementById('butt-note').style.opacity = '0';
+		setTimeout( function(){
+		document.getElementById('main-button').style.left = '0px';
+		document.getElementById('main-button').style.opacity = '0';
+		document.getElementById('vido').style.display = 'block';
+		document.getElementById('type-container').style.display = 'block';
+		setTimeout( function(){
+			document.getElementById('vido').style.opacity = '1';
+			document.getElementById('vido').style.left = '0';
+			setTimeout( function(){
+				document.getElementById('type-container').style.opacity = '1';
+				document.getElementById('type-container').style.left = '0';
+			}, 100);
+
+		}, 100);
+	}, 100);
+}
+
+	function show_dis(){
+		this.getElementsByTagName('p')[0].opacity = 1;
+	}
+
+
+
+
+
+
+</script>
+
+</html>
