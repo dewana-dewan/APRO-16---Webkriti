@@ -27,6 +27,156 @@
 		
 	</div>
 	</center>
+	
+	<center>
+		<div id="prod-container">
+		
+
+		<div class="diy-slideshow">
+	<figure class="show">
+		<img src="file:///home/dewan/APRO-16---Webkriti/img1.png" width="100%" /><figcaption><a>a watch asdj</a>.</figcaption> 
+	</figure>
+  <figure>
+    <img src="file:///home/dewan/APRO-16---Webkriti/img2.png" width="100%" /><figcaption><a> wathac asd</a>.</figcaption> 
+	</figure>
+	<figure>
+		<img src="file:///home/dewan/APRO-16---Webkriti/img3.png" width="100%" /><figcaption><a>asd watchas</a>.</figcaption> 
+	</figure>
+  <figure>
+		<img src="file:///home/dewan/APRO-16---Webkriti/img4.png" width="100%" /><figcaption><a href="http://www.flickr.com/photos/22746515@N02/5277611659/">watch ajkdfa </a></figcaption> 
+	</figure>
+  
+  <span class="prev">&laquo;</span>
+  <span class="next">&raquo;</span>
+</div>  
+
+
+
+
+
+
+
+		<br>
+			
+			<div class="prod">
+			<div class="image-box" style="">
+			
+			<div class="info-box">
+			<div class="offer-info">
+				<div class="main-offer">Mariner</div>
+				<div class="sub-text">whatch shit features</div>
+					<span class="price">578612.12 Lacs</span>
+			</div>
+			<div class="offer-date">
+				Exclusive offer 
+				<span class="bold-text">from 1st Mar to 31st Mar</span>
+			</div>
+			<div class="details-link">View Details</div>
+			</div>
+			</div>
+			</div>
+
+			<div class="prod">
+			<div class="image-box" style="">
+			
+			<div class="info-box">
+			<div class="offer-info">
+				<div class="main-offer">watch</div>
+				<div class="sub-text">whatch shit features</div>
+					<span class="price">578612.12 Lacs</span>
+			</div>
+			<div class="offer-date">
+				Exclusive offer 
+				<span class="bold-text">from 1st Mar to 31st Mar</span>
+			</div>
+			<div class="details-link">View Details</div>
+			</div>
+			</div>
+			</div>
+
+			<div class="prod">
+			<div class="image-box" style="">
+			
+			<div class="info-box">
+			<div class="offer-info">
+				<div class="main-offer">watch</div>
+				<div class="sub-text">whatch <b>shit</b> features</div>
+					<span class="price"><b>578612.12 Lacs</b></span>
+			</div>
+			<div class="offer-date">
+				Exclusive offer 
+				<span class="bold-text">from 1st Mar to 31st Mar</span>
+			</div>
+			<div class="details-link">View Details</div>
+			</div>
+			</div>
+			</div>
+
+			<br>
+			<br>
+
+			<div class="prod">
+			<div class="image-box" style="">
+			
+			<div class="info-box">
+			<div class="offer-info">
+				<div class="main-offer">Mariner</div>
+				<div class="sub-text">whatch shit features</div>
+					<span class="price">578612.12 Lacs</span>
+			</div>
+			<div class="offer-date">
+				Exclusive offer 
+				<span class="bold-text">from 1st Mar to 31st Mar</span>
+			</div>
+			<div class="details-link">View Details</div>
+			</div>
+			</div>
+			</div>
+
+			<div class="prod">
+			<div class="image-box" style="">
+			
+			<div class="info-box">
+			<div class="offer-info">
+				<div class="main-offer">watch</div>
+				<div class="sub-text">whatch shit features</div>
+					<span class="price">578612.12 Lacs</span>
+			</div>
+			<div class="offer-date">
+				Exclusive offer 
+				<span class="bold-text">from 1st Mar to 31st Mar</span>
+			</div>
+			<div class="details-link">View Details</div>
+			</div>
+			</div>
+			</div>
+
+			<div class="prod">
+			<div class="image-box" style="">
+			
+			<div class="info-box">
+			<div class="offer-info">
+				<div class="main-offer">watch</div>
+				<div class="sub-text">whatch shit features</div>
+					<span class="price">578612.12 Lacs</span>
+			</div>
+			<div class="offer-date">
+				Exclusive offer 
+				<span class="bold-text">from 1st Mar to 31st Mar</span>
+			</div>
+			<div class="details-link">View Details</div>
+			</div>
+			</div>
+			</div>
+		</div>
+	</center>
+	<br>
+
+	<br>
+	<br>
+
+
+
 		<div id = "foot">
 		<div id = "l-foot" class="foot-e" >
 <pre>
@@ -42,4 +192,41 @@ chaujasd 22
 		</div>
 
 </body>
+<script type="text/javascript">
+	
+(function(){
+  
+var counter = 0, // to keep track of current slide
+    $items = document.querySelectorAll('.diy-slideshow figure'), // a collection of all of the slides, caching for performance
+    numItems = $items.length; // total number of slides
+
+// this function is what cycles the slides, showing the next or previous slide and hiding all the others
+var showCurrent = function(){
+  var itemToShow = Math.abs(counter%numItems);// uses remainder (aka modulo) operator to get the actual index of the element to show  
+  
+  // remove .show from whichever element currently has it 
+  // http://stackoverflow.com/a/16053538/2006057
+  [].forEach.call( $items, function(el){
+    el.classList.remove('show');
+  });
+  
+  // add .show to the one item that's supposed to have it
+  $items[itemToShow].classList.add('show');    
+};
+
+// add click events to prev & next buttons 
+document.querySelector('.next').addEventListener('click', function() {
+     counter++;
+     showCurrent();
+  }, false);
+
+document.querySelector('.prev').addEventListener('click', function() {
+     counter--;
+     showCurrent();
+  }, false);
+  
+})();  
+
+</script>
+
 </html>
