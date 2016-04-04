@@ -19,10 +19,12 @@
 		<div id = "logo">
 			<img src="images.png">
 		</div>
-		<div id = "extra"></div>
+		<div class = "h-buttbig">company ka logo bc</div>
 		<div class = "h-butt">shiss1</div>
 		<div class = "h-butt">shiss2</div>
-		<div class = "h-butt">shiss3</div>
+		<div class = "h-butt">shiss2</div>
+
+		
 	</div>
 	
 	<div id = "body-container">
@@ -32,8 +34,8 @@
 		</div>
 
 		<div id = "vido">
-		video should be inserted 	
-		</div>
+		<video id="video" controls="" autoplay="asdkasd" name="media" style="width: 100%;"><source src="http://www.patek.com/movies/home/2016/5930_5230.mp4" type="video/mp4"></video>
+		
 		<div id = "type-container">
 			<div class="type">
 				shit lorem ipsum bla bla
@@ -53,10 +55,46 @@
 		</div>
 		</center>
 		<div id = "foot">
-			<div id = "l-foot" class="foot-e" ></div>
-			<div id = "r-foot" class="foot-e" ></div>
+		<div id = "l-foot" class="foot-e" >
+<pre>
+chausdfg 11
+asdf
+</pre>
+		</div>
+		<div id = "r-foot" class="foot-e" >
+<pre>
+chaujasd 22
+</pre>
+		</div>
 		</div>
 
 </body>
+
+<script>
+	vid = document.getElementById("video");
+	vid.pause();
+	document.getElementById('main-button').addEventListener('click', show_vid, false);
+	function show_vid(){
+		//vid.play();
+		document.getElementById('butt-note').style.left = '0px';
+		document.getElementById('butt-note').style.opacity = '0';
+		setTimeout( function(){
+		document.getElementById('main-button').style.left = '0px';
+		document.getElementById('main-button').style.opacity = '0';
+		document.getElementById('vido').style.display = 'block';
+		document.getElementById('type-container').style.display = 'block';
+		setTimeout( function(){
+			document.getElementById('vido').style.opacity = '1';
+			document.getElementById('vido').style.left = '0';
+			setTimeout( function(){
+				document.getElementById('type-container').style.opacity = '1';
+				document.getElementById('type-container').style.left = '0';
+			}, 100);
+
+		}, 100);
+	}, 100);
+}
+
+</script>
 
 </html>
