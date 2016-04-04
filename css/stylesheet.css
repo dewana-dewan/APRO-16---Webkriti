@@ -88,10 +88,54 @@ pre{
 }
 #type-container{
 	margin-bottom: 15px;
-	bottom: 2%;
+	bottom: 10%;
+
 }
 .type{
-	width :25%;
+	display: inline-block;
+	width :19%;
+	margin: 20px;
+	height: 100px;
+	border:1px solid rgba(0,0,0,.6);
+	overflow: hidden;
+	border-radius: 4px;
+	transition: all ,0.3s
+}
+.type p{
+	opacity: 1;
+	color: white;
+	background-color: rgba(0,0,0,.6);
+
+}
+#t1{
+	background: url(file:///home/dewan/APRO-16---Webkriti/img1.png) center center;	
+}
+#t2{
+	background: url(file:///home/dewan/APRO-16---Webkriti/img2.png) center center;	
+}
+#t3{
+	background: url(file:///home/dewan/APRO-16---Webkriti/img3.png) center center;	
+}
+#t4{
+	background: url(file:///home/dewan/APRO-16---Webkriti/img4.png) center center;	
+}
+#t1:hover{
+	box-shadow: 0px 0px 20px rgba(0,0,0,.6);
+	width: 24%;
+	height:110px;
+}
+#t2:hover{
+	box-shadow: 0px 0px 20px rgba(0,0,0,.6);
+	width: 24%;
+	height:110px;
+}#t3:hover{
+	box-shadow: 0px 0px 20px rgba(0,0,0,.6);
+	width: 24%;
+	height:110px;
+}#t4:hover{
+	box-shadow: 0px 0px 20px rgba(0,0,0,.6);
+	width: 24%;
+	height:110px;
 }
 #foot{
 	position: absolute;
