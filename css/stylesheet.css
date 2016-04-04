@@ -53,6 +53,15 @@ pre{
 	font-size: 35px;
 	transition: all .4s;
 }
+#butt-note1{
+	position: absolute;
+	top: 33%;
+	font-weight: 500;
+	width: 60%;
+	left:20%;
+	font-size: 30px;
+	transition: all .4s;
+}
 #main-button{
 	width:20%;
 	top:50%;
@@ -102,9 +111,12 @@ pre{
 	transition: all ,0.3s
 }
 .type p{
+	font-family: verdana;
+	margin-top: 0px;
+	font-weight: lighter;
 	opacity: 1;
 	color: white;
-	background-color: rgba(0,0,0,.6);
+	background-color: rgba(0,0,0,.5);
 
 }
 #t1{
