@@ -73,7 +73,11 @@ pre{
 .main-offer{
 	font-size: 24px;
     line-height: 18px;
-    color: rgba(255, 230, 0, .9);
+    color: rgba(0,0,230,.8);
+    background-color: white;
+    padding: 3px;
+    border:1px solid pink;
+    border-radius: 5px;
     margin-bottom: 5px;
     font-weight: 700;
 }
